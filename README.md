@@ -11,12 +11,13 @@ npm install https://github.com/hairichuhe/vue-ajax.git
 import vueAjax from 'vue-ajax'
 Vue.use(vueAjax)
 
-this.$ajax({
+var _this=this;
+_this.$ajax({
   type:"GET",
   url:_this.$root.host+"/user",
   dataType:"json",
   success:function(res){
-    alert(res;
+    alert(res);
   }
 })
 ```
