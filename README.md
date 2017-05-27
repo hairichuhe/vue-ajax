@@ -8,5 +8,15 @@ npm install https://github.com/hairichuhe/vue-ajax.git
 
 ## quickliy start
 ```
-import 'vue-ajax'
+import vueAjax from 'vue-ajax'
+Vue.use(vueAjax)
+
+this.$ajax({
+  type:"GET",
+  url:_this.$root.host+"/user",
+  dataType:"json",
+  success:function(res){
+    alert(res;
+  }
+})
 ```
